@@ -5,12 +5,12 @@ Feature:  As a user
 
 Background:
   Given I am logged in
-
+@wip
 Scenario: Entering/storing an achievement
   Given I am on the achievements page
   When  I enter an achievement
   And   I press "Save"
   Then  my achievement is saved in the database
   And   I see a confirmation message
-  And   I am on the achievements page
+  And   I should be on the achievements page
 

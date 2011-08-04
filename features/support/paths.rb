@@ -17,6 +17,9 @@ module NavigationHelpers
     when /the sign in page/
       '/users/sign_in'
 
+    when /the achievements page/
+      "/users/#{@user.id}/achievements"
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
