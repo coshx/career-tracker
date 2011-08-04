@@ -1,10 +1,22 @@
 @import "colors";
+@import "compass/css3";
 @import "compass/reset";
 @import "compass/layout";
 @import "compass/typography";
 
-#header, #canvas, #footer { width: $site-width; }
-#account-menu, #main-menu, #content { width: $content-width; }
+#{headings()} {
+    font-weight: bold;
+    font-family: 'Lucida Grande', 'Lucida Sans', sans-serif;
+    color: $dark-blue;
+}
+
+
+
+#header, #canvas, #footer, #account-menu { width: $site-width; }
+#main-menu, #content {
+     width: $content-width;
+     margin: 0 auto;
+}
 
 
 #canvas {
@@ -16,4 +28,32 @@
 
 #header {
     width: $site-width;
+}
+
+#account-menu {
+    height: 25px;
+    background-color: $blue;
+}
+
+#account-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#account-menu li {
+    @include inline-block;
+    float: right;
+    padding: 3px;
+    margin: 3px;
+}
+
+#main-menu {
+    @include inline-block;
+}
+
+
+
+@include sticky-footer(200px, "#canvas", "#layout-footer", "#footer");
+#footer {
+    background-color: $dark-blue;
 }
