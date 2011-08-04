@@ -12,6 +12,7 @@ body {
 #{headings()} {
     font-weight: bold;
     color: $dark-blue;
+    margin-bottom: 10px;
 }
 
 h1 { font-size: 22px }
@@ -27,7 +28,8 @@ h3 { font-size: 16px }
 
 #main-menu, #title {
     width: $site-width / 2;
-    height: 50px;
+    padding-top: 10px;
+    height: 40px;
     clear: none;
     border-bottom: 2px solid $light-orange;
 }

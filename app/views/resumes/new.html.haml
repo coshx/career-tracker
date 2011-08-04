@@ -1,0 +1,5 @@
+%h2 New Resume
+= form_for(@resume) do |f|
+  %p
+    = f.text_field :title
+  %p= f.submit "Create"

@@ -1,0 +1,7 @@
+- if @resumes
+  %ul
+  - @resumes.each do |resume|
+    %li= link_to resume.title, resume
+- else
+  %h3 You do not have any resumes.
+  %span= link_to "Create One.", new_resume_path
