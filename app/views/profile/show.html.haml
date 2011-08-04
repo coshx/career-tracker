@@ -1,5 +1,6 @@
-%h2 #{current_user.name}'s Profile
+%h2 #{@current_user.name}'s Profile
 
 %h3 Account Info
+#account-info= render "users/show", :user => @current_user
 
 %h3 Contact Info

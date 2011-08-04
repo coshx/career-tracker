@@ -17,8 +17,11 @@ body {
 
 h1 { font-size: 22px }
 h2 { font-size: 20px }
-h3 { font-size: 18px }
-h3 { font-size: 16px }
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+h4 { font-size: 16px }
 
 
 #header, #canvas, #footer, #account-menu { width: $site-width; }
