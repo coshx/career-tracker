@@ -1,0 +1,19 @@
+@import "colors";
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/typography";
+
+#header, #canvas, #footer { width: $site-width; }
+#account-menu, #main-menu, #content { width: $content-width; }
+
+
+#canvas {
+    background-color: white;
+    width: $site-width;
+    display: block;
+    margin: 0 auto;
+}
+
+#header {
+    width: $site-width;
+}
