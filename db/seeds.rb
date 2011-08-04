@@ -11,9 +11,9 @@ puts 'SETTING UP DEFAULT USER LOGIN'
 
 pwd = 'password'
 
-mike = User.create! :name => 'Mike Hickman', :email => 'mhickman84@gmail.com', :password => pwd, :password_confirmation => pwd
+mike = User.create! :name => 'Mike Hickman', :email => 'mike@coshx.com', :password => pwd, :password_confirmation => pwd
 puts 'New user created: ' << mike.name
-david = User.create! :name => 'Mike Hickman', :email => 'mhickman84@gmail.com', :password => pwd, :password_confirmation => pwd
+david = User.create! :name => 'David Kovsky', :email => 'david@coshx.com', :password => pwd, :password_confirmation => pwd
 puts 'New user created: ' << david.name
-sean = User.create! :name => 'Mike Hickman', :email => 'mhickman84@gmail.com', :password => pwd, :password_confirmation => pwd
+sean = User.create! :name => 'Sean Luckett', :email => 'sean@coshx.com', :password => pwd, :password_confirmation => pwd
 puts 'New user created: ' << sean.name
