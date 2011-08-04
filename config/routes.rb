@@ -4,9 +4,8 @@ CareerTracker::Application.routes.draw do
   root :to => "home#index"
 
   devise_for :users
-  resources :users, :only => :show do
-    resources :achievements
-  end
+  resources :users, :only => :show
+  resources :achievements
   resources :resumes
   resources :achievements
 

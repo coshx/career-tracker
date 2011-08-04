@@ -1,7 +1,11 @@
-Given /^I am logged in$/ do
-  @user = Factory.create()
-  Given %Q{I am on the sign in page}
-  And   %Q{I fill in "#{@user.email}" for "Email"}
-  And   %Q{I fill in "password" for "Password"}
-  Then  %Q{I press "Sign in"}
+Given /^I am a registered user$/ do
+  email = Factory.next(:email)
+  Given %Q{I am on the sign up page}
+  Given %Q{I fill in "#{Factory.next(:name)}" for "Name"}
+  Given %Q{I fill in "#{email}" for "Email"}
+  password = Factory.next(:password)
+  Given %Q{I fill in "#{password}" for "Password"}
+  Given %Q{I fill in "#{password}" for "Password confirmation"}
+  And %Q{I press "Sign up"}
+  @current_user = User.where(email: email).first
 end

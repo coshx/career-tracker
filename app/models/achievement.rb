@@ -1,7 +1,6 @@
 class Achievement
   include Mongoid::Document
 
-  field :title
   field :description
   field :results
   field :keywords

@@ -1,2 +1,21 @@
-%h2 #{current_user.name}'s Achievements
+%h3 #{current_user.name}'s Achievements
 = render "list"
+%h4 New Achievement
+=form_for(@achievement) do |f|
+  %div.field
+    =f.label :description
+    =f.text_area :description
+  %div.field
+    =f.label :results
+    =f.text_area :results
+  %div.field
+    =f.label :start_date
+    =f.text_field :start_date
+  %div.field
+    =f.label :end_date
+    =f.text_field :end_date
+  %div.field
+    =f.label :keywords
+    =f.text_field :keywords
+  %div.actions
+    =f.submit

@@ -18,7 +18,7 @@ module NavigationHelpers
       '/users/sign_in'
 
     when /the achievements page/
-      "/users/#{@user.id}/achievements"
+      "/achievements"
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

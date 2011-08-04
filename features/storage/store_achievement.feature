@@ -4,12 +4,12 @@ Feature:  As a user
           ...in order to have it available for a resume
 
 Background:
-  Given I am logged in
+  Given I am a registered user
 @wip
 Scenario: Entering/storing an achievement
   Given I am on the achievements page
   When  I enter an achievement
-  And   I press "Save"
+  And   I press "Create Achievement"
   Then  my achievement is saved in the database
   And   I see a confirmation message
   And   I should be on the achievements page
