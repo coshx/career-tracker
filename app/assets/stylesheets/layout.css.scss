@@ -4,18 +4,57 @@
 @import "compass/layout";
 @import "compass/typography";
 
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 12px;
+}
+
 #{headings()} {
     font-weight: bold;
-    font-family: 'Lucida Grande', 'Lucida Sans', sans-serif;
     color: $dark-blue;
 }
 
+h1 { font-size: 22px }
+h2 { font-size: 20px }
+h3 { font-size: 18px }
+h3 { font-size: 16px }
 
 
 #header, #canvas, #footer, #account-menu { width: $site-width; }
-#main-menu, #content {
-     width: $content-width;
-     margin: 0 auto;
+#content {
+    margin: $page-margin
+}
+
+#main-menu, #title {
+    width: $site-width / 2;
+    height: 50px;
+    clear: none;
+    border-bottom: 2px solid $light-orange;
+}
+
+#title { float: left; }
+#main-menu { float: right; }
+#main-menu nav {
+    float: right;
+    margin-right: $page-margin;
+}
+
+#title h1, #main-menu a { margin: 5px;}
+
+#title h1 {
+    width: 50%;
+    margin-left: $page-margin;
+}
+
+#main-menu a {
+    color: white;
+    background-color: $light-orange;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    @include border-radius(4px, 4px);
+    @include inline-block;
 }
 
 
@@ -30,9 +69,14 @@
     width: $site-width;
 }
 
+#content {
+    padding: 20px 0
+}
+
 #account-menu {
-    height: 25px;
+    height: 20px;
     background-color: $blue;
+    border-bottom: 1px solid $dark-blue;
 }
 
 #account-menu a {
@@ -44,7 +88,7 @@
     @include inline-block;
     float: right;
     padding: 3px;
-    margin: 3px;
+    margin: 0 3px;
 }
 
 #main-menu {
@@ -56,4 +100,5 @@
 @include sticky-footer(200px, "#canvas", "#layout-footer", "#footer");
 #footer {
     background-color: $dark-blue;
+    border-top: 1px solid $blue;
 }
