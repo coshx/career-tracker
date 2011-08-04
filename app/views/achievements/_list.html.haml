@@ -1,7 +1,8 @@
-- if @achievements
+- if @achievements.blank?
+  %h3 You do not have any achievements. :'(
+  %span= link_to "Create One", new_achievement_path
+- else
   %ul
   - @achievements.each do |achievement|
-    %li= link_to achievement.title, achievement
-- else
-  %h3 You do not have any achievements. :'(
-  %span= link_to "Create One.", new_achievement_path
+    %li.achievement
+      -achievement.description

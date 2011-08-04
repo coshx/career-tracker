@@ -13,5 +13,6 @@ class User
 
   has_many :resumes
   has_many :cover_letters
+  has_many :achievements
   embeds_one :address
 end

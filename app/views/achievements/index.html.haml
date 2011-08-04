@@ -1,7 +1,13 @@
 %h3 #{current_user.name}'s Achievements
-= render "list"
 %h4 New Achievement
+  
 =form_for(@achievement) do |f|
+  -if @achievement.errors.any?
+    #error_explanation
+      =pluralize(@achievement.errors.count, "error")
+      prohibited this user from being saved:
+      = @achievement.errors.full_messages.each do |msg|
+        =msg
   %div.field
     =f.label :description
     =f.text_area :description
@@ -19,3 +25,5 @@
     =f.text_field :keywords
   %div.actions
     =f.submit
+
+=render "list"

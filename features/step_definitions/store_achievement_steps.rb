@@ -11,5 +11,5 @@ Then /^my achievement is saved in the database$/ do
 end
 
 Then /^I see a confirmation message$/ do
-  pending # express the regexp above with the code you wish you had
+  Then %Q{I should see "Achievement created successfully."}
 end
