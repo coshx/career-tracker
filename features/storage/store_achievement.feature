@@ -11,6 +11,7 @@ Scenario: Entering/storing an achievement
   When  I enter an achievement
   And   I press "Create Achievement"
   Then  my achievement is saved in the database
-  And   I see a confirmation message
   And   I should be on the achievements page
+  And   I see a confirmation message
+  And   I should see my achievement in a list
 
