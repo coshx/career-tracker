@@ -5,7 +5,7 @@ Feature:  As a user
 
 Background:
   Given I am a registered user
-@wip
+
 Scenario: Entering/storing an achievement
   Given I am on the achievements page
   When  I enter an achievement
