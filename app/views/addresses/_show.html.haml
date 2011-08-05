@@ -1,7 +1,18 @@
-%p#notice= notice
-
-%p
-  %b :
-  = @address.field
-
-= link_to 'Edit', edit_test_path(@address)
+.label
+  %b Description
+  = @address.description
+.label
+  %b Line 1
+  = @address.street_1
+.label
+  %b Line 2
+  = @address.street_2
+.label
+  %b City
+  = @address.city
+.label
+  %b State
+  = @address.state
+.label
+  %b Zip
+  = @address.zip

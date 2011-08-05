@@ -1,4 +1,6 @@
 CareerTracker::Application.routes.draw do
+  resources :widgets
+
   resources :tests
 
   #get \"users\/show\"

@@ -105,3 +105,24 @@ h4 { font-size: 16px }
     background-color: $dark-blue;
     border-top: 1px solid $blue;
 }
+
+#resume {
+    width: 75%;
+    float: right;
+    min-height: 500px;
+}
+
+#achievements {
+    float: left;
+    width: 25%;
+    background-color: $light-blue;
+    min-height: 500px;
+}
+
+#container {
+    border-top: 3px solid $blue;
+    border-left: 3px solid $blue;
+    border-right: 3px solid $blue;
+    @include clearfix;
+    min-height: 500px;
+}

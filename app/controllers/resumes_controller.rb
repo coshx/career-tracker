@@ -13,7 +13,7 @@ class ResumesController < ApplicationController
     current_user.resumes << @resume
     if @resume.save
       flash[:notice] = "Created Resume #{@resume.title}."
-      redirect_to :action => 'index'
+      redirect_to edit_resume_path(@resume)
     else
       render :action => 'new'
     end
@@ -22,10 +22,14 @@ class ResumesController < ApplicationController
   def show
     @resumes = current_user.resumes
     @resume = Resume.find(params[:id])
-
   end
 
   def edit
+    @resume = Resume.find(params[:id])
+    @achievements = current_user.achievements
+  end
+
+  def update
 
   end
 end
