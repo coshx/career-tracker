@@ -18,7 +18,18 @@
     %section#pro-summary
       %p
         = current_user.pro_summary
-
+  %br/
+  %hr/
+  %h4{:style => "text-align:left"} Professional Experience
+  
+  
+  
   %section#resume-achievements
     - @resume.achievements.each do |a|
-      %p= a.description
+      %p 
+        = a.description
+        %br/
+        = "RESULTS: #{a.results}"
+      
+      
+      

@@ -50,7 +50,10 @@ puts "New institution #{work_place.name} created."
 pos.institution = work_place
 pos.save!
 
-
+#guests.each do |user|
+#  user.positions << pos
+#  user.save!
+#end
 
 achievements = [{:description => 'Judged a lot of talentless people.', :results => 'The entertainment world is better off without them.', :keywords => 'Judgment', :start_date => 3.months.ago, :end_date => 1.month.ago},
                 {:description => 'Dazzled audiences all over the country.', :results => 'Production company made a gazillion dollars in one month.', :keywords => 'Judgment', :start_date => 3.months.ago, :end_date => 1.month.ago},
