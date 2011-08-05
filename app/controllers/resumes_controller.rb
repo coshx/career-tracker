@@ -5,6 +5,7 @@ class ResumesController < ApplicationController
 
   def new
     @resume = Resume.new
+    @achievements = current_user.achievements
   end
 
   def create

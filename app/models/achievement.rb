@@ -9,4 +9,5 @@ class Achievement
 
   references_one :position
   references_one :institution
+  belongs_to :user
 end

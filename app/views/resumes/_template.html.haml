@@ -1,0 +1,20 @@
+%section#contact-info
+  %p#name
+    = current_user.name
+  - if current_user.address
+    %span#address
+      = current_user.address.street_1
+      %br/
+      = current_user.address.street_2 if current_user.address.street_2
+      %br/
+      = "#{current_user.address.city}, #{current_user.address.state}  #{current_user.address.zip}"
+    %span#phone-numbers
+      = current_user.address.phone
+  %br/
+  %p
+    = current_user.email
+
+  %section#professional-info
+    %section#pro-summary
+      %p
+        = current_user.pro_summary
