@@ -7,5 +7,7 @@ class Position
   field :end_date, type: Date
 
   
-  references_one :institution
+  belongs_to :institution
+  belongs_to :user
+  has_many :achievements
 end

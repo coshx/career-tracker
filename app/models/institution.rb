@@ -5,5 +5,5 @@ class Institution
   field :type
 
   embeds_one :address
-  referenced_in :institution
+  has_many :positions
 end

@@ -14,5 +14,6 @@ class User
   has_many :resumes
   has_many :cover_letters
   has_many :achievements
+  has_many :positions
   embeds_one :address
 end

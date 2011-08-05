@@ -1,5 +1,7 @@
 == Welcome to Career Tracker
 
+DESCRIPTION:
+
 The idea Career Tracker is built around is another concept called the resume database.
 While the name implies a database full of resumes, in this case we mean the resume acts
 as a database to hold user achievements during their career.  This "database" is then handed
@@ -7,13 +9,22 @@ to a potential employer in resume form.
 
 The purpose of this application is to store these achievements emphasizing results.  So, rather
 than have a job description, it lists a job title and achievements accomplished during the
-user's tenure.  The big idea, here, is to have achievements catagorized and
-searchable so a user can generate custom resumes.
+user's tenure.  As a user accomplishes more things during their career, they can enter details
+in Career Tracker and have them available when needed.  A major advantage of this application
+is users don't have to remember what they did at a job 5 years ago--they can enter details while
+they're still fresh.
 
-By custom resume, we mean the popular concept of having a resume fit the job description.
+The big idea, here, is to have achievements categorized and searchable so a user can generate
+custom resumes.  Here, we mean the popular concept of having a resume fit the job description.
 For example, if a job lists a particular skill, a user could put an achievement on their resume describing
 how they not only used that skill, but saved the universe (or at least the company's bottom line) whilst
 doing it.
 
 In its present state, our application will store achievements, list them, and allow a user to drag-and-drop
 them into a resume template.  Once done, the user can save the resume.
+
+SETUP:
+
+login: guest
+password:  password
+

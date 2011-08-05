@@ -7,7 +7,6 @@ class Achievement
   field :start_date, type: Date
   field :end_date, type: Date
 
-  references_one :position
-  references_one :institution
+  belongs_to :position
   belongs_to :user
 end
