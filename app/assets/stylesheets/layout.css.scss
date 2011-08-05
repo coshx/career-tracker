@@ -135,7 +135,7 @@ h4 { font-size: 16px }
 #achievements li { margin-left: 10px; list-style-type: none; }
 
 #resume-achievements {
-    text-align: left;
+    text-align: left; min-height: 100px;
     margin-top: 40px;
 }
 #resume-achievements p { padding: 10px 0 }
