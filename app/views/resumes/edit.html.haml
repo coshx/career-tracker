@@ -1,4 +1,8 @@
 %h2 Customize Your Resume
 #container
-  #achievements= render "/achievements/list"
-  #resume= render "template"
+  #achievements
+    %h3.center Your Achievements
+    =render "/achievements/list"
+  #resume-container
+    %h3.center=@resume.title
+    #resume=render "template"

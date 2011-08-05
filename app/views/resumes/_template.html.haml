@@ -1,4 +1,4 @@
-%section#contact-info
+%section#contact-info{'data-content-key' => 'resume'}
   %p#name
     = current_user.name
   - if current_user.address
@@ -18,3 +18,7 @@
     %section#pro-summary
       %p
         = current_user.pro_summary
+
+  %section#resume-achievements
+    - @resume.achievements.each do |a|
+      %p= a.description

@@ -5,4 +5,5 @@
   %ul
   - @achievements.each do |achievement|
     %li.achievement
-      =achievement.description
+      = achievement.description
+      =link_to "add", add_achievement_path(achievement), :remote => true, :method => :post

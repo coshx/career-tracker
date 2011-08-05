@@ -9,4 +9,5 @@ class Achievement
 
   belongs_to :position
   belongs_to :user
+  belongs_to :resume
 end

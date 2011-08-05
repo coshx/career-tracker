@@ -26,10 +26,20 @@ class ResumesController < ApplicationController
 
   def edit
     @resume = Resume.find(params[:id])
+    session[:current_resume] = params[:id]
     @achievements = current_user.achievements
   end
 
   def update
+    
+  end
 
+  def add_achievement
+    @achievement = Achievement.find(params[:id])
+    @resume = Resume.find(session[:current_resume])
+    @resume.achievements.build unless @resume.achievements
+    @resume.achievements << @achievement
+    @resume.save
+    render :partial => "resumes/template"
   end
 end

@@ -26,7 +26,7 @@ h4 { font-size: 16px }
 
 #header, #canvas, #footer, #account-menu { width: $site-width; }
 #content {
-    margin: $page-margin
+    margin: $page-margin $page-margin 0 $page-margin
 }
 
 #main-menu, #title {
@@ -96,6 +96,10 @@ h4 { font-size: 16px }
     margin: 0 3px;
 }
 
+.center {
+    text-align:center;
+}
+
 #main-menu {
     @include inline-block;
 }
@@ -106,23 +110,39 @@ h4 { font-size: 16px }
     border-top: 1px solid $blue;
 }
 
-#resume {
+#resume-container {
     width: 75%;
     float: right;
-    min-height: 500px;
+    min-height: 800px;
+}
+
+#resume {
+    padding: 25px;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    height: 675px;
+    border: 1px solid $dark-blue;
+    text-align: center;
 }
 
 #achievements {
     float: left;
     width: 25%;
     background-color: $light-blue;
-    min-height: 500px;
+    min-height: 800px;
 }
 
+#achievements li { margin-left: 10px; list-style-type: none; }
+
+#resume-achievements {
+    text-align: left;
+    margin-top: 40px;
+}
+#resume-achievements p { padding: 10px 0 }
 #container {
-    border-top: 3px solid $blue;
-    border-left: 3px solid $blue;
-    border-right: 3px solid $blue;
+    border-top: 2px solid $blue;
+    border-left: 2px solid $blue;
+    border-right: 2px solid $blue;
     @include clearfix;
-    min-height: 500px;
+    min-height: 800px;
 }

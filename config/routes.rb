@@ -1,9 +1,4 @@
 CareerTracker::Application.routes.draw do
-  resources :widgets
-
-  resources :tests
-
-  #get \"users\/show\"
 
   root :to => "home#index"
 
@@ -15,6 +10,7 @@ CareerTracker::Application.routes.draw do
   resources :achievements
 
   match 'profile' => 'profile#show'
+  match 'resume/add_achievement/:id' => 'resumes#add_achievement', :as => :add_achievement
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

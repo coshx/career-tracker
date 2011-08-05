@@ -5,4 +5,5 @@ class Resume
   field :title
   
   embeds_many :resume_sections
+  has_many :achievements
 end
