@@ -7,6 +7,7 @@ CareerTracker::Application.routes.draw do
 
   devise_for :users
   resources :users, :only => :show
+  resources :achievements
   resources :resumes
   resources :addresses
   resources :achievements

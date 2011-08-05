@@ -1,7 +1,6 @@
 class Achievement
   include Mongoid::Document
 
-  field :title
   field :description
   field :results
   field :keywords
@@ -10,4 +9,5 @@ class Achievement
 
   references_one :position
   references_one :institution
+  belongs_to :user
 end

@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
 <section id="canvas">
   <section id="header">
     <section id="account-menu">
@@ -46,6 +47,9 @@
       <section id="main-menu">
         <%= render 'shared/main_menu' %>
       </section>
+  </section>
+  <section id="flash">
+    <%= notice %>
   </section>
   <section id="content">
     <%= yield %> <!-- end of #container -->
