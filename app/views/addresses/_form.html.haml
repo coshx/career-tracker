@@ -1,0 +1,22 @@
+= form_for @address, :remote => true do |f|
+  = render "shared/form_errors", :resource => @address
+  .field
+    = f.label :description
+    = f.text_field :description
+  .field
+    = f.label :street_1
+    = f.text_field :street_1
+  .field
+    = f.label :street_2
+    = f.text_field :street_2
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :zip
+    = f.text_field :zip
+  .actions
+    = f.submit 'Save'

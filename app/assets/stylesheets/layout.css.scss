@@ -100,8 +100,6 @@ h4 { font-size: 16px }
     @include inline-block;
 }
 
-
-
 @include sticky-footer(200px, "#canvas", "#layout-footer", "#footer");
 #footer {
     background-color: $dark-blue;

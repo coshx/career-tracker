@@ -1,0 +1,7 @@
+- if @addresses
+  %ul
+  - @addresses.each do |address|
+    %li= link_to address.title, address
+- else
+  .notify You do not have any addresses.
+  %span= link_to "Create One.", new_address_path, 'data-remote-content' => true, :remote => true

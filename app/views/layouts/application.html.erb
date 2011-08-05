@@ -26,15 +26,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <!-- CSS: implied media="all" -->
-  <%= stylesheet_link_tag "style", "application", :media => "all", :cache => "styles" %>
+  <%= stylesheet_link_tag "application", :media => "all", :cache => "styles" %>
 
   <!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
-
-  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
-       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <%= javascript_include_tag "modernizr", "respond", :cache => "modernizer-respond" %>
-
 </head>
 
 <body>
@@ -46,12 +40,12 @@
         <%= render 'devise/menu/registration_items' %>
       </ul>
     </section>
-    <section id="title">
+      <section id="title">
         <h1>Career Tracker</h1>
-    </section>
-    <section id="main-menu">
+      </section>
+      <section id="main-menu">
         <%= render 'shared/main_menu' %>
-    </section>
+      </section>
   </section>
   <section id="content">
     <%= yield %> <!-- end of #container -->
@@ -63,7 +57,7 @@
 </section>
 <!-- JavaScript at the bottom for fast page loading -->
 
-<%= javascript_include_tag :defaults, :cache => true %>
+<%= javascript_include_tag :application %>
 
 </body>
 </html>

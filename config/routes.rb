@@ -1,4 +1,6 @@
 CareerTracker::Application.routes.draw do
+  resources :tests
+
   #get \"users\/show\"
 
   root :to => "home#index"
@@ -6,6 +8,7 @@ CareerTracker::Application.routes.draw do
   devise_for :users
   resources :users, :only => :show
   resources :resumes
+  resources :addresses
   resources :achievements
 
   match 'profile' => 'profile#show'

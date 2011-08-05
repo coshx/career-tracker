@@ -1,6 +1,7 @@
 class Address
   include Mongoid::Document
-  
+
+  field :description
   field :street_1
   field :street_2
   field :city

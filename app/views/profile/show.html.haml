@@ -1,6 +1,10 @@
 %h2 #{@current_user.name}'s Profile
 
-%h3 Account Info
-#account-info= render "users/show", :user => @current_user
-
-%h3 Contact Info
+.two-column
+  %section.contact-info
+    %h4 Name
+    #account-info= render "users/show", :user => @current_user
+  %div{'data-content-key' => 'address'}
+    %section.address-info
+      %h4 Address
+      = render "addresses/list"
