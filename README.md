@@ -1,15 +1,14 @@
-== Welcome to Career Tracker
+##Welcome to Career Tracker
 
 ###Using our application:
 
-There are three accounts you can use to login.  The password for all of them is:
-    password
+There are three accounts you can use to login.
 
-logins are:
+logins / passwords are:
 
-  jed@judge.net
-  jerry@judge.net
-  carl@judge.net
+  - jed@judge.net / password
+  - jerry@judge.net / password
+  - carl@judge.net / password
 
 The achievements button allows you to enter achievements if you like, but we've provided
 some for you.  Click on Resumes to tailor a resume with your achievements.
@@ -35,7 +34,7 @@ so I record important career information
 
 As a user
 I want to search stored achievements by position
-in order to have them available for a resume (see how I put “in order to” in order to spice things up a bit?)
+in order to have them available for a resume
 
 As a user
 I want to search stored achievements by employer
@@ -47,7 +46,7 @@ in order to have them available for a resume
 
 As a user
 I want to create a customized resume
-so I can impress the hiring manager at the job I’m applying for.
+so I can impress the hiring manager at the job I’m applying for
 
 As a user with a list of achievements pulled from the database
 I want to select important items to go on my resume
@@ -67,4 +66,4 @@ So it is available for use in a resume
 
 As a Career Tracker developer
 I want to sneak an easter egg into Career Tracker
-In order to send the strongest candidates to Coshx Labs, Inc
+In order to send the strongest candidates to Coshx Labs, Inc  
